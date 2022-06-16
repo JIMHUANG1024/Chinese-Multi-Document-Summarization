@@ -150,7 +150,7 @@ xl = LayerNorm(h + FFN(h))               (12)
 
 用来交换段落与段落之间的信息，如下图 Global Transformer Layer
 
-![图片](63b6b1225162c28bdc167627c0668914.png)
+![图片](img/63b6b1225162c28bdc167627c0668914.png)
 
 首先，应用multi-head pooling对每个段落进行操作，不同的heads将以不同的attention权重编码段落；然后，对于每一个head，一个Inter-paragraph Attention机制被应用。通过自注意力机制，每一个段落可以从其他段落中收集信息，生成向量来捕捉整个输入的上下文信息；最后，上下文向量可以被concated、linear transformed、增加到每个token的向量中，并且喂到feed-forward层，用全局信息（global information）更新每个token的表示。
 
