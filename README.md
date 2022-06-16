@@ -1,5 +1,5 @@
 # Chinese-Multi-Document-Summarization
-Multi-Chinese-Document Summarization.
+《**Hierarchical Transformers for Multi-Document Summarization**》文章的复现！
 # 中文多文档摘要
 
 这是复现《**Hierarchical Transformers for Multi-Document Summarization**》
